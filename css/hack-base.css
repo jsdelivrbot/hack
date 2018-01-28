@@ -1,21 +1,26 @@
+header {
+    background-image: -webkit-linear-gradient(135deg,#181629 20%,#2c5463 70%);
+}
+
 /* HACK */
 html {
     font-size: 12px;
 }
+
 * {
     box-sizing: border-box;
     text-rendering: geometricPrecision;
 }
 body {
-    font-size: 1rem;
+    font-size: 1rem; 
     line-height: 1.5rem;
     margin: 0;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     word-wrap: break-word;
 }
 body {
-	padding: 20px;
-	max-width: 700px;
+    padding: 25px;
+    max-width: 700px;
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.3em;
