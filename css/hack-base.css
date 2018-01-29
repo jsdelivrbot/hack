@@ -1,5 +1,11 @@
 header {
     background-image: -webkit-linear-gradient(135deg,#181629 20%,#2c5463 70%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 25px !important;
+    min-height:  30px;
+    width:  100%;
 }
 
 /* HACK */
@@ -20,7 +26,8 @@ body {
 }
 body {
     padding: 25px;
-    max-width: 700px;
+    max-width: 1002px;
+    margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.3em;
@@ -351,7 +358,7 @@ table tbody td:first-child {
     margin-bottom: 1.75rem;
     overflow: auto;
 }
-.form-group label {
+label {
     border-bottom: 2px solid #ccc;
     color: #333;
     width: 10rem;
@@ -362,19 +369,21 @@ table tbody td:first-child {
     float: left;
     position: relative;
 }
-.form-group.form-success label {
+.form-success label {
     color: #4caf50!important;
     border-color: #4caf50!important;
 }
-.form-group.form-warning label {
+.form-warning label {
     color: #ff9800!important;
     border-color: #ff9800!important;
 }
-.form-group.form-error label {
+.form-error label {
     color: #f44336!important;
     border-color: #f44336!important;
 }
-.form-control {
+input,
+textarea,
+select {
     outline: none;
     border: none;
     border-bottom: 2px solid #ccc;
@@ -383,10 +392,12 @@ table tbody td:first-child {
     height: 38px;
     background-color: transparent;
 }
-.form-control:focus {
+input:focus,
+textarea:focus,
+select:focus {
     border-color: #555;
 }
-.form-group.form-textarea label:after {
+label:after {
     position: absolute;
     content: "";
     width: 2px;
@@ -395,15 +406,15 @@ table tbody td:first-child {
     top: 0;
     bottom: 0;
 }
-textarea.form-control {
+textarea {
     height: auto;
-    resize: none;
+    /* resize: none; */
     padding: 1rem 0;
     border-bottom: 2px solid #ccc;
     border-left: 2px solid #ccc;
     padding: .5rem;
 }
-select.form-control {
+select {
     border-radius: 0;
     background-color: transparent;
     -webkit-appearance: none;
@@ -435,20 +446,21 @@ button {
     position: relative;
     z-index: 1;
 }
-.btn:active {
+button:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, .12);
 }
-.btn.btn-ghost {
+button {
     border-color: #757575;
     color: #757575;
     background-color: transparent;
 }
-.btn.btn-ghost:focus, .btn.btn-ghost:hover {
+button:focus, 
+button:hover {
     border-color: #424242;
     color: #424242;
     z-index: 2;
 }
-.btn.btn-ghost:hover {
+button:hover {
     background-color: transparent;
 }
 .btn-block {
@@ -689,8 +701,9 @@ to {
     display: none;
 }
 .form-control {
-    width: 100%}
-textarea.form-control {
+    width: 100%;
+}
+textarea {
     border-left: none;
     padding: .5rem 0;
 }

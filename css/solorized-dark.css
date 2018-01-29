@@ -18,6 +18,8 @@ pre {
     background-color: #073642;
     padding: 0;
     border: none;
+    white-space: normal;
+    word-break: break-all;
 }
 pre code {
     color: #009688;
@@ -46,23 +48,29 @@ table td, table th {
 table tbody td:first-child {
     color: #b0bec5;
 }
-.form-group label {
+label {
     color: #78909c;
     border-color: #90a4ae;
 }
-.form-group.form-textarea label:after {
+label:after {
     background-color: #073642;
 }
-.form-control {
+input,
+textarea,
+select {
     color: #78909c;
     border-color: #90a4ae;
 }
-.form-control:focus {
+input:focus,
+textarea:focus,
+select:focus {
     border-color: #cfd8dc;
     color: #cfd8dc;
 }
-textarea.form-control {
+textarea {
     color: #78909c;
+    min-width: 285px;
+    min-height: 150px;
 }
 .card {
     border-color: #90a4ae;
@@ -72,36 +80,44 @@ textarea.form-control {
     color: #78909c;
     border-bottom: 1px solid #90a4ae;
 }
-.btn.btn-ghost.btn-default {
+button {
     border-color: #607d8b;
     color: #607d8b;
 }
-.btn.btn-ghost.btn-default:focus, .btn.btn-ghost.btn-default:hover {
+button:focus, 
+button:hover {
     border-color: #90a4ae;
     color: #90a4ae;
     z-index: 1;
 }
-.btn.btn-ghost.btn-default:focus, .btn.btn-ghost.btn-default:hover {
+button.btn-default:focus, 
+button.btn-default:hover {
     border-color: #e0e0e0;
     color: #e0e0e0;
 }
-.btn.btn-ghost.btn-primary:focus, .btn.btn-ghost.btn-primary:hover {
+
+button._1:focus, 
+button._1:hover { /*primary*/
     border-color: #64b5f6;
     color: #64b5f6;
 }
-.btn.btn-ghost.btn-success:focus, .btn.btn-ghost.btn-success:hover {
+button._2:focus, 
+button._2:hover { /*success*/
     border-color: #81c784;
     color: #81c784;
 }
-.btn.btn-ghost.btn-info:focus, .btn.btn-ghost.btn-info:hover {
+button._3:focus, 
+button._3:hover { /*info*/
     border-color: #4dd0e1;
     color: #4dd0e1;
 }
-.btn.btn-ghost.btn-error:focus, .btn.btn-ghost.btn-error:hover {
+button._4:focus, 
+button._4:hover { /*error*/
     border-color: #e57373;
     color: #e57373;
 }
-.btn.btn-ghost.btn-warning:focus, .btn.btn-ghost.btn-warning:hover {
+button._5:focus, 
+button._5:hover { /*warning*/
     border-color: #ffb74d;
     color: #ffb74d;
 }
