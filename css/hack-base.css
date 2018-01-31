@@ -363,11 +363,15 @@ label {
     color: #333;
     width: 10rem;
     display: inline-block;
-    height: 38px;
-    line-height: 38px;
-    padding: 0;
+    vertical-align:  middle;
+    min-height: 28px;
+    line-height: 1.7;
+    padding: 10px 0 6px 0;
     float: left;
     position: relative;
+    display:  flex;
+    align-items:  center;
+    align-self: center;
 }
 .form-success label {
     color: #4caf50!important;
