@@ -80,29 +80,38 @@ textarea {
     color: #78909c;
     border-bottom: 1px solid #90a4ae;
 }
-button {
+button,
+.btn {
     border-color: #607d8b;
     color: #607d8b;
 }
 button:focus, 
-button:hover {
+button:hover,
+.btn:focus, 
+.btn:hover {
     border-color: #90a4ae;
     color: #90a4ae;
     z-index: 1;
 }
 button.btn-default:focus, 
-button.btn-default:hover {
+button.btn-default:hover,
+.btn.btn-default:focus,
+.btn.btn-default:hover  {
     border-color: #e0e0e0;
     color: #e0e0e0;
 }
 
 button._1:focus, 
-button._1:hover { /*primary*/
+button._1:hover,
+.btn._1:focus, 
+.btn._1:hover { /*primary*/
     border-color: #64b5f6;
     color: #64b5f6;
 }
 button._2:focus, 
-button._2:hover { /*success*/
+button._2:hover,
+.btn._2:focus, 
+.btn._2:hover { /*success*/
     border-color: #81c784;
     color: #81c784;
 }

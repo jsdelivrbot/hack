@@ -109,6 +109,8 @@ a:hover {
     -ms-flex: 1;
     flex: 1;
     box-sizing: border-box;
+    width: 100%;
+    overflow: scroll;
 }
 @media screen and (min-width:768px) {
     .cell.\-1of12 {
@@ -364,14 +366,22 @@ label {
     width: 10rem;
     display: inline-block;
     vertical-align:  middle;
-    min-height: 28px;
+    min-height: 38px;
     line-height: 1.7;
-    padding: 10px 0 6px 0;
+    /* padding: 10px 0 6px 0; */
+    margin: 0px 0 10px 0;
     float: left;
     position: relative;
     display:  flex;
     align-items:  center;
     align-self: center;
+}
+label > select,
+label > input {
+    border: none;
+    /* padding-right: 20px; */
+    margin: 0 15px;
+    width: 100px;
 }
 .form-success label {
     color: #4caf50!important;
@@ -432,7 +442,8 @@ select {
 .form-actions {
     margin-bottom: 1.75rem;
 }
-button {
+button,
+.btn {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-align: center;
@@ -449,22 +460,26 @@ button {
     user-select: none;
     position: relative;
     z-index: 1;
-}
-button:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .12);
-}
-button {
+
     border-color: #757575;
     color: #757575;
     background-color: transparent;
 }
+button:active,
+.btn:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .12);
+}
+
 button:focus, 
-button:hover {
+button:hover,
+.btn:focus, 
+.btn:hover {
     border-color: #424242;
     color: #424242;
     z-index: 2;
 }
-button:hover {
+button:hover,
+.btn:hover {
     background-color: transparent;
 }
 .btn-block {
@@ -775,3 +790,15 @@ input[type="checkbox"]:checked:before {
     border-radius: 0%;
 }
 
+input[type="checkbox"] + div,
+input[type="checkbox"]:checked + div + div {
+    display: none;
+}
+
+input[type="checkbox"]:checked + div {
+    display: block;
+}
+
+input[type="checkbox"]:focus {
+    border-color: #8fa4ae;
+}
