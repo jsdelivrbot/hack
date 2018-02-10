@@ -121,7 +121,9 @@ button._3:hover { /*info*/
     color: #4dd0e1;
 }
 button._4:focus, 
-button._4:hover { /*error*/
+button._4:hover,
+.btn._4:focus, 
+.btn._4:hover { /*error*/
     border-color: #e57373;
     color: #e57373;
 }

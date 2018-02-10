@@ -49,7 +49,7 @@ code[class*=language-], pre[class*=language-], pre code {
     text-shadow: none;
     margin: 1.75rem 0;
 }
-a {
+a:not(.btn) {
     cursor: pointer;
     color: #ff2e88;
     text-decoration: none;
@@ -146,7 +146,12 @@ a:hover {
 .cell.\-11of12 {
     -ms-flex: 0 0 91.66667%;
     flex: 0 0 91.66667%}
-}@media screen and (max-width:768px) {
+}
+.cell.\-12of12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%}
+}
+@media screen and (max-width:768px) {
     .grid {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -446,6 +451,10 @@ button,
 .btn {
     display: -ms-inline-flexbox;
     display: inline-flex;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 15px;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -672,8 +681,7 @@ button:hover,
 }
 .loading {
     display: inline-block;
-    content: "&nbsp;
-    ";
+    content: "&nbsp;";
     height: 20px;
     width: 20px;
     margin: 0 .5rem;
