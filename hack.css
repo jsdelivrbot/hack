@@ -1,9 +1,9 @@
 /* 
 	DEV: 
-	https://rawgit.com/bachschmidmedia/hack/master/hack.css
+	https://cdn.jsdelivr.net/gh/bachschmidmedia/hack/hack.css
 
 	PROD:
-	https://cdn.rawgit.com/bachschmidmedia/hack/master/hack.css
+	https://cdn.jsdelivr.net/gh/bachschmidmedia/hack/hack.css
 */
 @import url(css/hack-base.css);
 @import url(css/solorized-dark.css);
